@@ -89,8 +89,8 @@ if __name__ == "__main__":
             # Join specialization list with comma and space, or empty string if None/empty
             specialization = ", ".join(contractor.specialization) if contractor.specialization else ""
             writer.writerow([
-                args.county,  # County
-                contractor.state or "",  # State
+                args.county.split(',')[0],  # County
+                contractor.state or args.county.split(',')[1],  # State
                 contractor.name,  # Company
                 contractor.phone or "",  # Phone
                 contractor.email or "",  # Email
