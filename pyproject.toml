@@ -1,0 +1,10 @@
+[project]
+name = "atlas-analyst"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.13"
+dependencies = [
+    "dotenv>=0.9.9",
+    "openai>=2.7.1",
+    "pydantic>=2.12.3",
+]
